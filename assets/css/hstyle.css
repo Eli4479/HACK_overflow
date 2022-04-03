@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url('pic.jpg');
+    background: url('../img/pic.jpg');
     background-position:center ;
     background-size:cover;
     width: 100vw;
