@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('pic.jpg');
+    background-position:center ;
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+}
+.login{
+    width: 350px;
+    height: 450px;
+    background:black;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+/*.user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left:calc(50% -50px);
+    padding:70px 30px ;
+}*/
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.u1{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.login input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color:white;
+    font-size: 20px;
+}
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #fb2525;
+    color: white;
+    width: 50%;
+    
+    font-size: 18px;
+    border-radius: 40px;
+}
+.login input[type="submit"]:hover{
+    cursor: grab;
+    background: yellowgreen;
+    color: white;
+}
+.login a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color:grey;
+}
+.login a:hover{
+    color: bisque;
+}
+
+
