@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #2C003E;
+    padding: 20px;
+}
+
+.wrapper {
+    background: #D2FAFB;
+    height: calc(100vh - 40px);
+    border-radius: 15px;
+    display: flex;
+}
+
+.side_bar {
+    width: 250px;
+    height: 100%;
+}
+
+.main_container {
+    width: calc(100% - 250px);
+    padding: 30px;
+    overflow: auto;
+}
+
+.main_container p {
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.side_bar .side_bar_top {
+    background: #41AAA8;
+    height: 225px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 30px;
+}
+
+.side_bar .side_bar_top .profile_pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.side_bar .side_bar_top .profile_pic img {
+    width: 115px;
+    height: 115px;
+    padding: 5px;
+    border: 2px solid #dbcbe2;
+    border-radius: 50%;
+}
+
+.side_bar .side_bar_top .profile_info {
+    text-align: center;
+    color: #2C003E;
+}
+
+.side_bar .side_bar_top .profile_info p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.side_bar .side_bar_bottom {
+    background: #41AAA8;
+    height: calc(100% - 225px);
+    padding: 20px 0;
+    padding-left: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.side_bar .side_bar_bottom ul li {
+    position: relative;
+}
+
+.side_bar .side_bar_bottom ul li a {
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    color: #D2FAFB;
+    margin-bottom: 5px;
+}
+
+.side_bar .side_bar_bottom ul li a .icon {
+    margin-right: 8px;
+}
+
+.side_bar .side_bar_bottom ul li.active a {
+    background: #D2FAFB;
+    color: #425c5a;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.side_bar .side_bar_bottom ul li.active .top_curve,
+.side_bar .side_bar_bottom ul li.active .bottom_curve {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #D2FAFB;
+}
+
+.side_bar .side_bar_bottom ul li.active .top_curve {
+    top: -20px;
+}
+
+.side_bar .side_bar_bottom ul li.active .bottom_curve {
+    bottom: -20px;
+}
+
+.side_bar .side_bar_bottom ul li.active .top_curve:before,
+.side_bar .side_bar_bottom ul li.active .bottom_curve:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #41AAA8;
+}
+
+.side_bar .side_bar_bottom ul li.active .top_curve:before {
+    border-bottom-right-radius: 25px;
+}
+
+.side_bar .side_bar_bottom ul li.active .bottom_curve:before {
+    border-top-right-radius: 25px;
+}
+
+body {
+    font-family: Roboto;
+    background: #00416a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #e4e5e6, #00416a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( to right, #e4e5e6, #00416a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background: #2980b9;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.fa-plus {
+    float: right;
+}
+
+li {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+li:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+
+input {
+    font-size: 18px;
+    color: #2980b9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
