@@ -8,7 +8,7 @@
 }
 
 body{
-  background: #005faf;
+  background: #D2FAFB;
 }
 
 .container{
@@ -19,12 +19,12 @@ body{
   background: #fff;
   width: 450px;
   padding: 20px 35px;
-  border-radius: 3px;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
 }
 
 .container .title{
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -32,22 +32,22 @@ body{
   color: #005faf;
 }
 
-.container .input_wrap{
-  margin-bottom: 15px;
+.container .inside_container{
+  margin-bottom: 18px;
 }
 
-.container .input_wrap:last-child{
+.container .inside_container:last-child{
   margin-bottom: 0;
 }
 
-.container .input_wrap label{
+.container .inside_container label{
   display: block;
   margin-bottom: 5px;
   font-size: 14px;
   color: #757575;
 }
 
-.container .input_wrap .input{
+.container .inside_container .input{
   border: 1px solid #d5dbd9;
   width: 100%;
   outline: none;
@@ -57,12 +57,12 @@ body{
   transition: all 0.3s ease;
 }
 
-.container .input_wrap .custom_select{
+.container .inside_container .custom_select{
   border: 1px solid #d5dbd9;
   position: relative;
 }
 
-.container .input_wrap .custom_select:before{
+.container .inside_container .custom_select:before{
   content: "";
   position: absolute;
   top: 12px;
@@ -72,7 +72,7 @@ body{
   pointer-events: none;
 }
 
-.container .input_wrap .custom_select select{
+.container .inside_container .custom_select select{
   -webkit-appearance: none;
   -moz-appearance:   none;
   appearance:        none;
@@ -83,18 +83,18 @@ body{
   font-size: 15px;
 }
 
-.container .input_wrap .error_msg {
+.container .inside_container .error_msg {
     color: #e87060;
     font-size: 14px;
     margin-top: 5px;
     display: none;
 }
 
-.container .input_wrap .input:focus{
+.container .inside_container .input:focus{
   border-color: #005faf;
 }
 
-.container .input_wrap .btn{
+.container .inside_container .btn{
   width: 100%;
   padding: 10px;
   border: 0px;
@@ -106,6 +106,6 @@ body{
   cursor: pointer;
 }
 
-.container .input_wrap .btn:hover{
+.container .inside_container .btn:hover{
   background: #0179e0;
 }
