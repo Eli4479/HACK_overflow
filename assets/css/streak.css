@@ -136,3 +136,30 @@ body {
 .side_bar .side_bar_bottom ul li.active .bottom_curve:before {
     border-top-right-radius: 25px;
 }
+.main_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.box{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.emp-data-sub-heading{
+    color: (black);
+    font-size: 24px;
+}
+
+.emp-data-sub-heading-para{
+    color: brown;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 38px;
+}
