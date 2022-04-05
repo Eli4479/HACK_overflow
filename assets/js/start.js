@@ -1,6 +1,4 @@
-// to automate the year in the footer of webpage
-const year = document.getElementById("date");
-year.innerHTML = new Date().getFullYear();
+
 
 // for smooth scroll and navbar
 const linkContainer = document.querySelector(".links-container");
