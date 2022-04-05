@@ -11,13 +11,13 @@ li_items.forEach(function(li_main) {
 
 
 
-// Check Off Specific Todos By Clicking
+// Check Off Specific Task By Clicking
 $("ul").on("click", "li", function() {
     $(this).toggleClass("completed");
 });
 
 //Click on X to delete Todo
-$("ul").on("click", "span", function(event) {
+$(".list ul").on("click", "span", function(event) {
     $(this)
         .parent()
         .fadeOut(500, function() {
