@@ -1,3 +1,4 @@
+const { json } = require('express/lib/response');
 var Userdb = require('../model/model');
 
 // Create and save new user
@@ -103,4 +104,23 @@ exports.delete = (req, res) => {
                 message: "Could not delete User with id=" + id
             });
         });
+}
+
+exports.findthis = (req, res) => {
+    var namel = req.body.name;
+    var passl = req.body.password;
+
+    const namefound = Userdb.findOne({ name: namel }).then((namefound) => {
+        if (namefound == null) {
+            res.send({ message: "invalid user data" });
+        } else {
+            // res.send(namefound);
+            if (passl == namefound.password) {
+                res.redirect('/profile');
+            } else {
+                res.send({ message: "invalid user detail" });
+            }
+        }
+    });
+
 }
