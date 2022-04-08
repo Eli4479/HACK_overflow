@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            Lets Scale Up Productivity
+        </div>
+
+        <form method="post" action="/login" id="form" onsubmit="return validate();">
+            <div class="inside_container">
+                <label for="name">User Name</label>
+                <input type="text" name="name" class="input" id="name">
+                <div class="error_msg" id="name_msg"></div>
+            </div>
+            <div class="inside_container">
+                <label for="name">Password</label>
+                <input type="password" name="password" class="input" id="name">
+                <div class="error_msg" id="name_msg"></div>
+            </div>
+
+            <div class="inside_container">
+                <input type="submit" value="login" class="btn">
+            </div>
+        </form>
+        <div class="x">
+            <a href="/register">
+                <div class="inside_container">
+                    <input type="submit" value="New User" class="btn">
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

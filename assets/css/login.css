@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #D2FAFB;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 450px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container .title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #005faf;
+}
+
+.container .inside_container {
+    margin-bottom: 18px;
+}
+
+.container .inside_container:last-child {
+    margin-bottom: 0;
+}
+
+.container .inside_container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #757575;
+}
+
+.container .inside_container .input {
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.container .inside_container .custom_select {
+    border: 1px solid #d5dbd9;
+    position: relative;
+}
+
+.container .inside_container .custom_select:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.container .inside_container .custom_select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+}
+
+.container .inside_container .error_msg {
+    color: #e87060;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.container .inside_container .input:focus {
+    border-color: #005faf;
+}
+
+.container .inside_container .btn {
+    width: 100%;
+    padding: 10px;
+    border: 0px;
+    background: #005faf;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container .inside_container .btn:hover {
+    background: #0179e0;
+}
+
+.x {
+    margin-top: 20px;
+}
