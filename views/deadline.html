@@ -8,7 +8,7 @@
     <title>profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../assets/css/deadlinestyle.css" />
+    <link rel="stylesheet" href="deadlinestyle.css" />
 </head>
 
 <body>
@@ -92,34 +92,15 @@
                 </div>
                 <form>
                     <div class="form-group">
-                        <label for="title">Task:</label>
+                        <label for="title" id="task1">Task:</label>
                         <input type="text" id="title" class="form-control" placeholder="Add a title... ">
-                    </div>
-                    <!-- <div class="form-group">
-                        <label for="usr">Who should do it:</label>
-                        <input type="text" id="usr" class="form-control" placeholder="Add a user...">
-                    </div> -->
-                    <div class="form-group">
-                        <label for="usr">Due Date:</label>
+                        <label for="usr" id="duedate">Due Date:</label>
                         <input type="date" id="due-date" class="form-control" placeholder="Due date">
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-3 pull-left">
-                            <button type="button" class="btn btn-primary" onclick="newElement()">Add Task</button>
-                        </div>
-                        <!-- <div class="dropdown col-xs-3 pull-left">
-                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Sort
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-list" onclick="sortElementsById()">By ID</li>
-                                <li class="dropdown-list" onclick="sortElementsByName()">By Name</li>
-                            </ul>
-                        </div> -->
-                        <!-- <div class="col-lg-6 pull-right">
-                            <div class="input-group">
-                                <input id="search-text" onkeyup="searchInList()" type="text" class="form-control" placeholder="Search..." name="search">
-                            </div>
-                        </div> -->
+                        <!-- <div class="row"> -->
+                            <!-- <div class="col-xs-3 pull-left"> -->
+                                <button type="button" class="btn btn-primary" onclick="newElement()">Add <br>Task</button>
+                                <!-- </div> -->
+                                <!-- </div> -->
                     </div>
                 </form>
             </div>
@@ -130,8 +111,8 @@
             <ul id="pagination" class="pagination pagination-lg"></ul>
         </div>
     </div>
-    <script src="../assets/js/deadlinejs.js"></script>
-    <script src="../assets/js/profile.js"></script>
+    <script src="deadlinejs.js"></script>
+    <script src="profile.js"></script>
 </body>
 
 </html>
