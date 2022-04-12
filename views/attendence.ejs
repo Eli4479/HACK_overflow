@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>setting</title>
+    <title>Attendence</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/6efa6b5eb3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/attendence.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -32,13 +34,6 @@
                     </li>
                     <li>
                         <span class="top_curve"></span>
-                        <a href="/task">
-                            <span class="icon"><i class="fa-solid fa-list-check"></i></span>
-                            <span class="item">TASK</span></a>
-                        <span class="bottom_curve"></span>
-                    </li>
-                    <li>
-                        <span class="top_curve"></span>
                         <a href="/deadline">
                             <span class="icon"><i class="fa-solid fa-book-open"></i></span>
                             <span class="item">DEADLINES</span></a>
@@ -51,16 +46,16 @@
                             <span class="item">SCORE</span></a>
                         <span class="bottom_curve"></span>
                     </li>
-                    <li>
+                    <li class="active">
                         <span class="top_curve"></span>
-                        <a href="/attendence">
+                        <a href="#">
                             <span class="icon"><i class="fas fa-chart-pie"></i></span>
                             <span class="item">ATTENDENCE</span></a>
                         <span class="bottom_curve"></span>
                     </li>
-                    <li class="active">
+                    <li>
                         <span class="top_curve"></span>
-                        <a href="#">
+                        <a href="/setting">
                             <span class="icon"><i class="fas fa-cog"></i></span>
                             <span class="item">SETTINGS</span></a>
                         <span class="bottom_curve"></span>
@@ -78,30 +73,40 @@
 
         <div class="main_container">
             <div class="card">
-                <div class="container">
-                    <img src="img/img2.png" alt="profile-img">
-                    <small class="tag">UX Designer|devloper</small>
-                    <div class="bar">
-                        <button class="btn add_tag">
-                            <i class="far fa-smile"></i>
-                            <span>add a tag</span>
-                        </button>
-                        <button class="btn btn-more">
-                            <i class="fas fa-ellipsis-h"></i>
-                            <span>contact us</span>
-                        </button>
+                <h2 class="heading">add your attendence status</h2>
+                    <div class="p-4">
+                        <div class="inside_container">
+                            <label for="attendence">Attendence</label>
+                            <input type="text" class="input" id="attendence">
+                            <div class="error_msg" id="email_msg"></div>
+                        </div>
+                        <div class="inside_container">
+                            <label for="phone">Leaves</label>
+                            <input type="text" class="input" id="Leaves">
+                            <div class="error_msg" id="phone_msg"></div>
+                        </div>
+                        <div class="inside_container">
+                            <label for="city">working days</label>
+                            <input type="text" class="input" id="working">
+                            <div class="error_msg" id="city_msg"></div>
+                        </div>
+                        <div class="inside_container">
+                            <input type="submit" value="Edit" class="btn" id="sumbit">
+                        </div>
                     </div>
-                    <form action=""><label for="">add your tag</label>
-                    <input type="text" name="" id="tag_text">
-                    <button>sumbit/</button>
-                    </form>
+                <div class="m-3 p-3 justify-content-center">
+                    <h4>your attended days are : <span id="display_attendence"></span></h4>
+                    <h4>your Leaves days are : <span id="display_leaves"></span></h4>
+                    <h4>your total working days are : <span id="display_days"></span></h4>
+                    <h4>your persent attendence is : <span id="display_percent"></span></h4>
                 </div>
             </div>
-
         </div>
+
+    </div>
     </div>
 
 </body>
-<script src="js/setting.js"></script>
+<script src="js/attendence.js"></script>
 
 </html>

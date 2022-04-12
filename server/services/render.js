@@ -20,3 +20,15 @@ exports.task = (req, res) => {
 exports.editattendence = (req, res) => {
     res.render('editattendence');
 }
+
+exports.deadline = (req, res) => {
+    res.render('deadline');
+}
+
+exports.score = (req, res) => {
+    res.render('score');
+}
+
+exports.attendence = (req, res) => {
+    res.render('attendence');
+}

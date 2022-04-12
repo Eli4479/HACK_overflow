@@ -1,4 +1,3 @@
-const { json } = require('express/lib/response');
 var Userdb = require('../model/model');
 
 // Create and save new user
@@ -50,7 +49,7 @@ exports.find = (req, res) => {
                 }
             })
             .catch(err => {
-                res.status(500).send({ message: "Erro retrieving user with id " + id })
+                res.status(500).send({ message: "Error retrieving user with id " + id })
             })
 
     } else {
