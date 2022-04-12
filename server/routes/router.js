@@ -21,6 +21,10 @@ route.get('/task', services.task);
 
 route.get('/editattendence', services.editattendence);
 
+route.get('/deadline', services.deadline);
+route.get('/score', services.score);
+route.get('/attendence', services.attendence);
+
 // API
 route.post('/api/users', controller.create);
 route.get('/api/users', controller.find);

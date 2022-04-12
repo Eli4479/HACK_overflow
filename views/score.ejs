@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile</title>
+    <title>score</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../assets/css/scorestyle.css" />
+    <script src="https://kit.fontawesome.com/6efa6b5eb3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/scorestyle.css" />
 </head>
 
 <body>
@@ -17,67 +18,56 @@
         <div class="side_bar">
             <div class="side_bar_top">
                 <div class="profile_pic">
-                    <img src="../assets/img/img2.png" alt="profile">
-                </div>
-                <div class="profile_info">
-                    <h3>ALEX JOHN</h3>
-                    <p>alex.john@gmail.com</p>
+                    <img src="img/img2.png" alt="profile">
                 </div>
             </div>
             <div class="side_bar_bottom">
                 <ul>
-                    <li class="active">
+                    <li>
                         <span class="top_curve"></span>
-                        <a href="#">
+                        <a href="/profile">
                             <span class="icon"><i class="fas fa-home"></i></span>
                             <span class="item">profile</span></a>
                         <span class="bottom_curve"></span>
                     </li>
                     <li>
                         <span class="top_curve"></span>
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-fighter-jet"></i></span>
-                            <span class="item">CONNECT</span></a>
-                        <span class="bottom_curve"></span>
-                    </li>
-                    <li>
-                        <span class="top_curve"></span>
-                        <a href="#">
-                            <span class="icon" <i class="bi bi-check2-circle"></i></i></span>
+                        <a href="/task">
+                            <span class="icon"><i class="fa-solid fa-list-check"></i></span>
                             <span class="item">TASK</span></a>
                         <span class="bottom_curve"></span>
                     </li>
                     <li>
                         <span class="top_curve"></span>
-                        <a href="#">
-                            <span class="icon"><i class="fa-solid fa-timeline-arrow"></i></span>
+                        <a href="/deadline">
+                            <span class="icon"><i class="fa-solid fa-book-open"></i></span>
                             <span class="item">DEADLINES</span></a>
                         <span class="bottom_curve"></span>
                     </li>
-                    <li>
+                    <li class="active">
                         <span class="top_curve"></span>
                         <a href="#">
-                            <span class="icon"><i class="fa-solid fa-hundred-points"></i></span>
+                            <span class="icon"><i class="fa-solid fa-ranking-star"></i></span>
                             <span class="item">SCORE</span></a>
                         <span class="bottom_curve"></span>
                     </li>
                     <li>
                         <span class="top_curve"></span>
-                        <a href="#">
+                        <a href="/attendence">
                             <span class="icon"><i class="fas fa-chart-pie"></i></span>
                             <span class="item">ATTENDENCE</span></a>
                         <span class="bottom_curve"></span>
                     </li>
                     <li>
                         <span class="top_curve"></span>
-                        <a href="#">
+                        <a href="/setting">
                             <span class="icon"><i class="fas fa-cog"></i></span>
                             <span class="item">SETTINGS</span></a>
                         <span class="bottom_curve"></span>
                     </li>
                     <li>
                         <span class="top_curve"></span>
-                        <a href="#">
+                        <a href="/login">
                             <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
                             <span class="item">LOGOUT</span></a>
                         <span class="bottom_curve"></span>
@@ -113,8 +103,7 @@
             <ul id="pagination" class="pagination pagination-lg"></ul>
         </div>
     </div>
-    <script src="../assets/js/scorejs.js"></script>
-    <script src="../assets/js/profile.js"></script>
+    <script src="js/scorejs.js"></script>
 </body>
 
 </html>
