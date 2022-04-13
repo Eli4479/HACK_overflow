@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -211,4 +212,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+li a {
+    text-decoration: none;
+
+}
+
+
+.toggled {
+    display: none;
 }
