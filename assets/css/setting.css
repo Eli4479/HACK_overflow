@@ -202,6 +202,11 @@ body {
     justify-content: center;
 }
 
+.button {
+
+    margin-left: 250px;
+}
+
 .btn i {
     font-size: 20px;
     margin-bottom: 0.5rem;
@@ -219,6 +224,9 @@ li a {
 
 }
 
+.frm {
+    margin-top: 20px;
+}
 
 .toggled {
     display: none;
