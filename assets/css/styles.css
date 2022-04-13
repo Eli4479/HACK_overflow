@@ -430,10 +430,46 @@ footer p {
 .content p{
   font-size: 1.4rem;
   line-height: 3rem;
+  align-content: center;
   text-align: center;
 }
 
 #tracker{
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contactus{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+.logoimg{
+  margin-left: 200px;
+  display: inline-block;
+  width: 10%;
+}
+
+.phonenumber{
+  margin: auto;
+  align-items: center;
+}
+
+#number{
+  margin-left: 200px;
+}
+
+.sociallinks{
+  display: inline-block;
+  width:100%;
+  margin: auto;
+  align-items: center;
+}
+
+.imagelink{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width:33%;
 }
