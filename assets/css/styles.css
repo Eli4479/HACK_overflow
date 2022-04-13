@@ -420,3 +420,20 @@ footer p {
     transform: scale(1);
   }
 }
+
+.content{
+  width: 60%;
+  margin: auto;
+  margin-top: 7rem;
+}
+
+.content p{
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+#tracker{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
