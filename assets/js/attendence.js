@@ -1,16 +1,32 @@
-console.log("hello world");
+// start side-bar js
+var li_items = document.querySelectorAll(".side_bar_bottom ul li");
+
+li_items.forEach(function (li_main) {
+    li_main.addEventListener("click", function () {
+        li_items.forEach(function (li) {
+            li.classList.remove("active");
+        })
+        li_main.classList.add("active");
+    })
+})
+// end side-bar js
+
+// start attendance form js
+
+
+// selecting required elements
 
 const x = document.querySelector('#attendence');
 const y = document.querySelector('#Leaves');
 const z = document.querySelector('#working');
 const a = document.querySelector('.btn');
-
 const dx = document.querySelector('#display_attendence');
 const dy = document.querySelector('#display_leaves');
 const dz = document.querySelector('#display_days');
 const dp = document.querySelector('#display_percent');
 
 
+// on submitting form
 
 a.addEventListener('click', function () {
     console.log("click");
@@ -44,3 +60,5 @@ a.addEventListener('click', function () {
         }
     }
 });
+
+// end attendance form js

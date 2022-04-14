@@ -1,3 +1,4 @@
+// start side-bar js
 var li_items = document.querySelectorAll(".side_bar_bottom ul li");
 
 li_items.forEach(function (li_main) {
@@ -8,6 +9,9 @@ li_items.forEach(function (li_main) {
     li_main.classList.add("active");
   })
 })
+// end side-bar js
+
+// start score list js
 
 var todoList = [{
   'todo': '',
@@ -186,3 +190,4 @@ function load(manyTodos) {
 window.onload = function () {
   sortElementsById();
 }
+// end score list js

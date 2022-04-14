@@ -20,3 +20,5 @@ var schema = new mongoose.Schema({
 const Userdb = mongoose.model('userdb', schema);
 
 module.exports = Userdb;
+
+// declaring and exporting mongodb schema

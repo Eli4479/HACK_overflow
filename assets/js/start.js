@@ -1,4 +1,3 @@
-// for smooth scroll and navbar
 const linkContainer = document.querySelector(".links-container");
 const navbarToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");

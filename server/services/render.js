@@ -32,3 +32,5 @@ exports.score = (req, res) => {
 exports.attendence = (req, res) => {
     res.render('attendence');
 }
+
+// different type of services and their function declare and exports

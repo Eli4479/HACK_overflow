@@ -9,13 +9,13 @@
 </head>
 
 <body>
+    <!-- ========== Start register form  ========== -->
 
     <div class="container">
         <div class="title">
             NeW User
         </div>
-
-        <form method="post" action="/api/users" id="form" onsubmit="return validate();">
+        <form method="post" action="/api/users" id="form">
             <div class="inside_container">
                 <label for="name">User Name</label>
                 <input type="text" name="name" class="input" id="name">
@@ -31,14 +31,13 @@
                 <input type="password" name="confirm_password" class="input" id="name">
                 <div class="error_msg" id="name_msg"></div>
             </div>
-
             <div class="inside_container">
                 <input type="submit" value="submit" class="btn">
             </div>
         </form>
-
     </div>
 
+    <!-- ========== End register form  ========== -->
 </body>
 
 </html>

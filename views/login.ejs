@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <title>login page</title>
     <link rel="stylesheet" href="css/login.css">
-
 </head>
 
 <body>
-
+    <!-- ========== Start login form ========== -->
     <div class="container">
         <div class="title">
             Lets Scale Up Productivity
         </div>
-
-        <form method="post" action="/login" id="form" onsubmit="return validate();">
+        <form method="post" action="/login" id="form">
             <div class="inside_container">
                 <label for="name">User Name</label>
                 <input type="text" name="name" class="input" id="name">
@@ -26,7 +24,6 @@
                 <input type="password" name="password" class="input" id="name">
                 <div class="error_msg" id="name_msg"></div>
             </div>
-
             <div class="inside_container">
                 <input type="submit" value="login" class="btn">
             </div>
@@ -39,7 +36,7 @@
             </a>
         </div>
     </div>
-
+    <!-- ========== End login form ========== -->
 </body>
 
 </html>

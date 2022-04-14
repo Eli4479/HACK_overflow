@@ -1,3 +1,4 @@
+// start side-bar js
 var li_items = document.querySelectorAll(".side_bar_bottom ul li");
 
 li_items.forEach(function (li_main) {
@@ -8,6 +9,10 @@ li_items.forEach(function (li_main) {
     li_main.classList.add("active");
   })
 });
+// end side-bar js
+
+// start deadline list js
+
 var todoList = [{
   'todo': '',
   'id': 'todo0'
@@ -28,9 +33,6 @@ function newElement() {
     return;
   } else {
     todo = inputTitle;
-    // if (inputUser != '') {
-    //   todo = inputUser + " needs to " + inputTitle;
-    // }
     if (inputDate != '') {
       todo = "Do " + todo + " by " + inputDate
     }
@@ -60,7 +62,6 @@ function findNextId() {
 
 function clearFields() {
   document.getElementById('title').value = '';
-  // document.getElementById('usr').value = '';
   document.getElementById('due-date').value = '';
 }
 
@@ -189,3 +190,4 @@ function load(manyTodos) {
 window.onload = function () {
   sortElementsById();
 }
+// end deadline list js
